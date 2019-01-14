@@ -1,0 +1,100 @@
+.container{
+  font-family: 'Nunito', sans-serif;
+}
+
+
+#welcome {
+  font-family: 'Nunito', sans-serif;
+  padding: 15px;
+  margin-top: 15px;
+
+}
+
+
+#welcome_par {
+  font-family: 'Nunito', sans-serif;
+  padding: 15px;
+  font-style: italic;
+
+}
+
+#left-side{
+  height:355px;
+  background: linear-gradient(#E8EEF8,#B6CAEB, #78A7FC);
+  color:#292B2C;
+  width:100%;
+  text-align: center;
+  border-radius: 38px 0px 0px 0px;
+}
+
+#left-side:hover{
+}
+
+#logo{
+  font-size: 20px;
+  text-align: center;
+  width:90%;
+  padding-left: 5%;
+  font-weight: bold;
+  padding-top:100px;
+}
+
+
+
+#logo-info{
+  padding-top:20px;
+  font-size: 14px;
+  text-align: center;
+  width:90%;
+  padding-left: 5%;
+}
+
+#logo-info:hover{
+}
+
+
+
+#right-side{
+  height:355px;
+  background-color: white;
+  width:100%;
+  text-align: left;
+  border-style: solid;
+  border-color: #292B2C;
+  border-radius: 0px 0px 38px 0px;
+  border-width: thin;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.title{
+  font-size: 19px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+
+.createAcc{
+  justify-content: right;
+  padding-top: -29px;
+}
+
+
+
+/* "ERROR box" */
+#errorBox {
+    position: center;
+    z-index: 99;
+    width: 350px;
+    height: 250px;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+    padding: 20px;
+}
+
+#errorBox a, h1{
+  color:#292B2C;
+}

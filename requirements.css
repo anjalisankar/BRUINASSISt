@@ -1,0 +1,70 @@
+body {
+    font-family: 'Nunito', sans-serif;
+}
+.container{
+  font-family: 'Nunito', sans-serif;
+}
+
+a {
+    color: #5CB2EC;
+    background: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+
+.nav-item{
+    font-family: 'Nunito', sans-serif;
+}
+
+.navbar a{
+    background: inherit;
+}
+
+.navbar a:hover{
+    background: inherit;
+    color: white;
+}
+
+#requirements
+{
+  height: 215px;
+  background: linear-gradient(#E8EEF8,#B6CAEB, #78A7FC);
+  color:#292B2C;
+  width:100%;
+  text-align: center;
+  border-radius: 28px 0px 28px 0px;
+}
+
+.box{
+    height:auto;
+    background-color: white;
+    width:100%;
+    text-align: left;
+    border-style: solid;
+    border-color: black;
+    border-radius: 0px 0px 0px 0px;
+    border-width: thin;
+    padding: 20px;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    font-size: 11px;
+
+}
+
+.colorbox {
+  height: auto;
+  background: linear-gradient(#e8eef8, #b6caeb, #78a7fc);
+  color: #292b2c;
+  width: 100%;
+  text-align: center;
+  border-radius: 0px 0px 0px 0px;
+  font-size: 11px;
+  padding: 20px;
+  padding-bottom: 5px;
+  margin-top: 20px;
+}

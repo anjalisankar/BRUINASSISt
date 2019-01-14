@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html>
+
+
+  <head>
+  <link href = "BruinAssistMajor.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400i,700,700i" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/aajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<div class="container">
+
+<div class="row">
+
+  <div class="col-sm col-med">
+
+
+  <nav class="navbar sticky-top navbar-dark" style="background-color: #78A7FC;">
+     <a class="navbar-brand" href="#">Navigation</a>
+
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/user_list/new_user">New Session <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/index/FAQ">FAQ </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Transfer</a>
+      </li>
+    </ul>
+  </div>
+
+
+
+  </nav>
+
+  </div>
+
+</div>
+
+<div class="row">
+
+  <div class="col-sm-2 col-med-2">
+
+  </div>
+<!-- </body>
+<center> -->
+ <div class = "container">
+
+   <div class="row">
+
+     <div class="col-sm-2 col-med-2">
+
+     </div>
+
+     <div class="col-sm-8 col-med-8">
+
+       <div class = "bruincontainer">
+
+       <div class= "bruinBox">
+       <center>
+         <div class="title">
+           <h1 style = "font-size:500%;">BruinAssist</h1>
+           <h3>Welcome, <%= @name.username%>!</h3>
+         </div>
+       </center>
+      </div>
+
+     <div class = "centercontent">
+       <form name="institution" class="formwelcome">
+             <select style = "width: 800px; height: 40px;"  name="ia" size="0" tabindex="1" onchange="window.location=document.institution.ia.options[document.institution.ia.selectedIndex].value" onmouseover="showHelpDiv('helptextINST1')" onmouseout="hideHelpDiv('helptextINST1')">
+               <option class="fontsize" value="" selected="">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Transfer From </option>
+
+
+                 <!-- Allan Hancock College -->
+                 <option class="fontsize" value="AHC">Allan Hancock College</option>
+                 <!-- American River College -->
+                 <option class="fontsize" value="ARC">American River College</option>
+                 <!-- Antelope Valley College -->
+                 <option class="fontsize" value="AVC">Antelope Valley College</option>
+                 <!-- Bakersfield College -->
+                 <option class="fontsize" value="BAKERFLD">Bakersfield College</option>
+                 <!-- Barstow Community College -->
+                 <option class="fontsize" value="BARSTOW">Barstow Community College</option>
+                 <!-- Berkeley City College -->
+                 <option class="fontsize" value="BERKELEY">Berkeley City College</option>
+                 <!-- Butte College -->
+                 <option class="fontsize" value="BUTTE">Butte College</option>
+                 <!-- Cabrillo College -->
+                 <option class="fontsize" value="CABRILLO">Cabrillo College</option>
+                 <!-- California Maritime Academy -->
+                 <option class="fontsize" value="CSUMA">California Maritime Academy</option>
+                 <!-- Cal Poly Pomona -->
+                 <option class="fontsize" value="CPP">California Polytechnic University, Pomona</option>
+                 <!-- Cal Poly San Luis Obispo -->
+                 <option class="fontsize" value="CPSLO">California Polytechnic University, San Luis Obispo</option>
+                 <!-- CSU Bakersfield -->
+                 <option class="fontsize" value="CSUB">California State University, Bakersfield</option>
+                 <!-- CSU Channel Islands -->
+                 <option class="fontsize" value="CSUCI">California State University, Channel Islands</option>
+                 <!-- CSU Chico -->
+                 <option class="fontsize" value="CSUC">California State University, Chico</option>
+                 <!-- CSU Dominguez Hills -->
+                 <option class="fontsize" value="CSUDH">California State University, Dominguez Hills</option>
+                 <!-- CSU East Bay -->
+                 <option class="fontsize" value="CSUEB">California State University, East Bay</option>
+                 <!-- CSU Fresno -->
+                 <option class="fontsize" value="CSUFRES">California State University, Fresno</option>
+                 <!-- CSU Fullerton -->
+                 <option class="fontsize" value="CSUFULL">California State University, Fullerton</option>
+                 <!-- CSU Hayward -->
+                 <option class="fontsize" value="CSUHAY">California State University, Hayward</option>
+                 <!-- CSU Long Beach -->
+                 <option class="fontsize" value="CSULB">California State University, Long Beach</option>
+                 <!-- CSU Los Angeles -->
+                 <option class="fontsize" value="CSULA">California State University, Los Angeles</option>
+                 <!-- CSU Monterey Bay -->
+                 <option class="fontsize" value="CSUMB">California State University, Monterey Bay</option>
+                 <!-- CSU Northridge -->
+                 <option class="fontsize" value="CSUN">California State University, Northridge</option>
+                 <!-- CSU Sacramento -->
+                 <option class="fontsize" value="CSUS">California State University, Sacramento</option>
+                 <!-- CSU San Bernardino -->
+                 <option class="fontsize" value="CSUSB">California State University, San Bernardino</option>
+                 <!-- CSU San Marcos -->
+                 <option class="fontsize" value="CSUSM">California State University, San Marcos</option>
+                 <!-- CSU Stanislaus -->
+                 <option class="fontsize" value="CSUSTAN">California State University, Stanislaus</option>
+                 <!-- Canada College -->
+                 <option class="fontsize" value="CANADA">Canada College</option>
+                 <!-- Cerritos College -->
+                 <option class="fontsize" value="CERRITOS">Cerritos College</option>
+                 <!-- Cerro Coso Community College -->
+                 <option class="fontsize" value="CERRO">Cerro Coso Community College</option>
+                 <!-- Chabot College -->
+                 <option class="fontsize" value="CHABOT">Chabot College</option>
+                 <!-- Chaffey College -->
+                 <option class="fontsize" value="CHAFFEY">Chaffey College</option>
+                 <!-- Citrus College -->
+                 <option class="fontsize" value="CITRUS">Citrus College</option>
+                 <!-- City College of San Francisco -->
+                 <option class="fontsize" value="SFCITY">City College of San Francisco</option>
+                 <!-- Clovis Community College -->
+                 <option class="fontsize" value="CLOVIS">Clovis Community College</option>
+                 <!-- Coastline Community College -->
+                 <option class="fontsize" value="COASTLIN">Coastline Community College</option>
+                 <!-- College of Alameda -->
+                 <option class="fontsize" value="ALAMEDA">College of Alameda</option>
+                 <!-- College of Marin -->
+                 <option class="fontsize" value="MARIN">College of Marin</option>
+                 <!-- College of San Mateo -->
+                 <option class="fontsize" value="MATEO">College of San Mateo</option>
+                 <!-- College of the Canyons -->
+                 <option class="fontsize" value="CANYONS">College of the Canyons</option>
+                 <!-- College of the Desert -->
+                 <option class="fontsize" value="DESERT">College of the Desert</option>
+                 <!-- College of the Redwoods -->
+                 <option class="fontsize" value="REDWOODS">College of the Redwoods</option>
+                 <!-- College of the Sequoias -->
+                 <option class="fontsize" value="SEQUOIAS">College of the Sequoias</option>
+                 <!-- College of the Siskiyous -->
+                 <option class="fontsize" value="SISKIYOU">College of the Siskiyous</option>
+                 <!-- Columbia College -->
+                 <option class="fontsize" value="COLUMBIA">Columbia College</option>
+                 <!-- Compton Community College -->
+                 <option class="fontsize" value="COMPTON">Compton Community College</option>
+                 <!-- Contra Costa College -->
+                 <option class="fontsize" value="CONTRA">Contra Costa College</option>
+                 <!-- Copper Mountain College -->
+                 <option class="fontsize" value="COPPER">Copper Mountain College</option>
+                 <!-- Cosumnes River College -->
+                 <option class="fontsize" value="CRC">Cosumnes River College</option>
+                 <!-- Crafton Hills College -->
+                 <option class="fontsize" value="CRAFTON">Crafton Hills College</option>
+                 <!-- Cuesta College -->
+                 <option class="fontsize" value="CUESTA">Cuesta College</option>
+                 <!-- Cuyamaca College -->
+                 <option class="fontsize" value="CUYAMACA">Cuyamaca College</option>
+                 <!-- Cypress College -->
+                 <option class="fontsize" value="CYPRESS">Cypress College</option>
+                 <!-- D-Q University -->
+                 <option class="fontsize" value="DQUNIV">D-Q University</option>
+                 <!-- De Anza College -->
+                 <option class="fontsize" value="DAC">De Anza College</option>
+                 <!-- Diablo Valley College -->
+                 <option class="fontsize" value="DIABLO">Diablo Valley College</option>
+                 <!-- East Los Angeles College -->
+                 <option class="fontsize" value="LAEC">East Los Angeles College</option>
+                 <!-- El Camino College -->
+                 <option class="fontsize" value="CAMINO">El Camino College</option>
+                 <!-- Evergreen Valley College -->
+                 <option class="fontsize" value="EVERGRN">Evergreen Valley College</option>
+                 <!-- Feather River College -->
+                 <option class="fontsize" value="FEATHER">Feather River College</option>
+                 <!-- Folsom Lake College -->
+                 <option class="fontsize" value="FOLSOM">Folsom Lake College</option>
+                 <!-- Foothill College -->
+                 <option class="fontsize" value="FOOTHILL">Foothill College</option>
+                 <!-- Fresno City College -->
+                 <option class="fontsize" value="FRESNO">Fresno City College</option>
+                 <!-- Fullerton College -->
+                 <option class="fontsize" value="FULLRTON">Fullerton College</option>
+                 <!-- Gavilan College -->
+                 <option class="fontsize" value="GAVILAN">Gavilan College</option>
+                 <!-- Glendale Community College -->
+                 <option class="fontsize" value="GLENDALE">Glendale Community College</option>
+                 <!-- Golden West College -->
+                 <option class="fontsize" value="GWC">Golden West College</option>
+                 <!-- Grossmont College -->
+                 <option class="fontsize" value="GMCC">Grossmont College</option>
+                 <!-- Hartnell College -->
+                 <option class="fontsize" value="HARTNELL">Hartnell College</option>
+                 <!-- Humboldt State -->
+                 <option class="fontsize" value="HSU">Humboldt State University</option>
+                 <!-- Imperial Valley College -->
+                 <option class="fontsize" value="IMPERIAL">Imperial Valley College</option>
+                 <!-- Irvine Valley College -->
+                 <option class="fontsize" value="IRVINE">Irvine Valley College</option>
+                 <!-- Kings River College -->
+                 <option class="fontsize" value="KRC">Kings River College</option>
+                 <!-- Lake Tahoe Community College -->
+                 <option class="fontsize" value="TAHOE">Lake Tahoe Community College</option>
+                 <!-- Laney College -->
+                 <option class="fontsize" value="LANEY">Laney College</option>
+                 <!-- Las Positas College -->
+                 <option class="fontsize" value="POSITAS">Las Positas College</option>
+                 <!-- Lassen Community College -->
+                 <option class="fontsize" value="LASSEN">Lassen Community College</option>
+                 <!-- Long Beach City College -->
+                 <option class="fontsize" value="LBCC">Long Beach City College</option>
+                 <!-- Los Angeles City College -->
+                 <option class="fontsize" value="LACC">Los Angeles City College</option>
+                 <!-- Los Angeles Harbor College -->
+                 <option class="fontsize" value="LAHC">Los Angeles Harbor College</option>
+                 <!-- Los Angeles Mission College -->
+                 <option class="fontsize" value="LAMC">Los Angeles Mission College</option>
+                 <!-- Los Angeles Pierce College -->
+                 <option class="fontsize" value="LAPC">Los Angeles Pierce College</option>
+                 <!-- Los Angeles Southwest College -->
+                 <option class="fontsize" value="LASC">Los Angeles Southwest College</option>
+                 <!-- Los Angeles Trade Technical College -->
+                 <option class="fontsize" value="LATT">Los Angeles Trade Technical College</option>
+                 <!-- Los Angeles Valley College -->
+                 <option class="fontsize" value="LAVC">Los Angeles Valley College</option>
+                 <!-- Los Medanos College -->
+                 <option class="fontsize" value="MEDANOS">Los Medanos College</option>
+                 <!-- Marymount California University -->
+                 <option class="fontsize" value="MARYMONT">Marymount California University</option>
+                 <!-- Marymount College -->
+                 <option class="fontsize" value="MARYMONT">Marymount College</option>
+                 <!-- Mendocino College -->
+                 <option class="fontsize" value="MENDOCIN">Mendocino College</option>
+                 <!-- Merced College -->
+                 <option class="fontsize" value="MERCED">Merced College</option>
+                 <!-- Merritt College -->
+                 <option class="fontsize" value="MERRITT">Merritt College</option>
+                 <!-- MiraCosta College -->
+                 <option class="fontsize" value="MIRACSTA">MiraCosta College</option>
+                 <!-- Mission College -->
+                 <option class="fontsize" value="MISSION">Mission College</option>
+                 <!-- Modesto Junior College -->
+                 <option class="fontsize" value="MODESTO">Modesto Junior College</option>
+                 <!-- Monterey Peninsula College -->
+                 <option class="fontsize" value="MONTEREY">Monterey Peninsula College</option>
+                 <!-- Moorpark College -->
+                 <option class="fontsize" value="MOORPARK">Moorpark College</option>
+                 <!-- Moreno Valley College -->
+                 <option class="fontsize" value="MVC">Moreno Valley College</option>
+                 <!-- Mount San Antonio College -->
+                 <option class="fontsize" value="MTSAC">Mount San Antonio College</option>
+                 <!-- Mt. San Jacinto College -->
+                 <option class="fontsize" value="MTSJC">Mt. San Jacinto College</option>
+                 <!-- Napa Valley College -->
+                 <option class="fontsize" value="NAPA">Napa Valley College</option>
+                 <!-- Norco College -->
+                 <option class="fontsize" value="NORCO">Norco College</option>
+                 <!-- Ohlone College -->
+                 <option class="fontsize" value="OHLONE">Ohlone College</option>
+                 <!-- Orange Coast College -->
+                 <option class="fontsize" value="OCC">Orange Coast College</option>
+                 <!-- Oxnard College -->
+                 <option class="fontsize" value="OXNARD">Oxnard College</option>
+                 <!-- Palo Verde College -->
+                 <option class="fontsize" value="PALOVRDE">Palo Verde College</option>
+                 <!-- Palomar College -->
+                 <option class="fontsize" value="PALOMAR">Palomar College</option>
+                 <!-- Pasadena City College -->
+                 <option class="fontsize" value="PASADENA">Pasadena City College</option>
+                 <!-- Porterville College -->
+                 <option class="fontsize" value="PORTER">Porterville College</option>
+                 <!-- Rancho Santiago College -->
+                 <option class="fontsize" value="RSC">Rancho Santiago College</option>
+                 <!-- Reedley College -->
+                 <option class="fontsize" value="REEDLEY">Reedley College</option>
+                 <!-- Rio Hondo College -->
+                 <option class="fontsize" value="RIOHONDO">Rio Hondo College</option>
+                 <!-- Riverside City College -->
+                 <option class="fontsize" value="RCC">Riverside City College</option>
+                 <!-- Sacramento City College -->
+                 <option class="fontsize" value="SCC">Sacramento City College</option>
+                 <!-- Saddleback College -->
+                 <option class="fontsize" value="SADDLBK">Saddleback College</option>
+                 <!-- San Bernardino Valley College -->
+                 <option class="fontsize" value="SBVC">San Bernardino Valley College</option>
+                 <!-- San Diego City College -->
+                 <option class="fontsize" value="SDCC">San Diego City College</option>
+                 <!-- San Diego Mesa College -->
+                 <option class="fontsize" value="MESA">San Diego Mesa College</option>
+                 <!-- San Diego Miramar College -->
+                 <option class="fontsize" value="MIRAMAR">San Diego Miramar College</option>
+                 <!-- San Diego State -->
+                 <option class="fontsize" value="SDSU">San Diego State University</option>
+                 <!-- San Francisco State -->
+                 <option class="fontsize" value="SFSU">San Francisco State University</option>
+                 <!-- San Joaquin Delta College -->
+                 <option class="fontsize" value="SJDELTA">San Joaquin Delta College</option>
+                 <!-- San Jose City College -->
+                 <option class="fontsize" value="SJCC">San Jose City College</option>
+                 <!-- San Jose State -->
+                 <option class="fontsize" value="SJSU">San Jose State University</option>
+                 <!-- Santa Ana College -->
+                 <option class="fontsize" value="SAC">Santa Ana College</option>
+                 <!-- Santa Barbara City College -->
+                 <option class="fontsize" value="SBCC">Santa Barbara City College</option>
+                 <!-- Santa Monica College -->
+                 <option class="fontsize" value="SMCC">Santa Monica College</option>
+                 <!-- Santa Rosa Junior College -->
+                 <option class="fontsize" value="SRC">Santa Rosa Junior College</option>
+                 <!-- Santiago Canyon College -->
+                 <option class="fontsize" value="SANTIAGO">Santiago Canyon College</option>
+                 <!-- Shasta College -->
+                 <option class="fontsize" value="SHASTA">Shasta College</option>
+                 <!-- Sierra College -->
+                 <option class="fontsize" value="SIERRA">Sierra College</option>
+                 <!-- Skyline College -->
+                 <option class="fontsize" value="SKYLINE">Skyline College</option>
+                 <!-- Solano Community College -->
+                 <option class="fontsize" value="SOLANO">Solano Community College</option>
+                 <!-- Sonoma State -->
+                 <option class="fontsize" value="SSU">Sonoma State University</option>
+                 <!-- Southwestern College -->
+                 <option class="fontsize" value="SWSTRN">Southwestern College</option>
+                 <!-- Taft College -->
+                 <option class="fontsize" value="TAFT">Taft College</option>
+                 <!-- UCD School of Veterinary Medicine -->
+                 <option class="fontsize" value="UCDSVM">UC Davis School of Veterinary Medicine</option>
+                 <!-- UCSF School of Dentistry -->
+                 <option class="fontsize" value="UCSFD">UCSF School of Dentistry</option>
+                 <!-- UCSF School of Pharmacy -->
+                 <option class="fontsize" value="UCSFP">UCSF School of Pharmacy</option>
+                 <!-- UC Berkeley -->
+                 <option class="fontsize" value="UCB">University of California, Berkeley</option>
+                 <!-- UC Davis -->
+                 <option class="fontsize" value="UCD">University of California, Davis</option>
+                 <!-- UC Irvine -->
+                 <option class="fontsize" value="UCI">University of California, Irvine</option>
+                 <!-- UCLA -->
+                 <option class="fontsize" value="UCLA">University of California, Los Angeles</option>
+                 <!-- UC Merced -->
+                 <option class="fontsize" value="UCM">University of California, Merced</option>
+                 <!-- UC Riverside -->
+                 <option class="fontsize" value="UCR">University of California, Riverside</option>
+                 <!-- UC San Diego -->
+                 <option class="fontsize" value="UCSD">University of California, San Diego</option>
+                 <!-- UC Santa Barbara -->
+                 <option class="fontsize" value="UCSB">University of California, Santa Barbara</option>
+                 <!-- UC Santa Cruz -->
+                 <option class="fontsize" value="UCSC">University of California, Santa Cruz</option>
+                 <!-- Ventura College -->
+                 <option class="fontsize" value="VENTURA">Ventura College</option>
+                 <!-- Victor Valley College -->
+                 <option class="fontsize" value="VVCC">Victor Valley College</option>
+                 <!-- Vista Community College -->
+                 <option class="fontsize" value="VISTA">Vista Community College</option>
+                 <!-- West Hills College Coalinga -->
+                 <option class="fontsize" value="WHC">West Hills College Coalinga</option>
+                 <!-- West Hills College Lemoore -->
+                 <option class="fontsize" value="WHCL">West Hills College Lemoore</option>
+                 <!-- West Los Angeles College -->
+                 <option class="fontsize" value="LAWC">West Los Angeles College</option>
+                 <!-- West Valley College -->
+                 <option class="fontsize" value="WVC">West Valley College</option>
+                 <!-- Woodland Community College -->
+                 <option class="fontsize" value="WCC">Woodland Community College</option>
+                 <!-- Yuba College -->
+                 <option class="fontsize" value="YUBA">Yuba College</option>
+             </select>
+           </form>
+              </div>
+        <div class = "contentmargin">
+
+        </div>
+    <div class = "centercontent2">
+
+          <select name="dora" select style = "width: 800px; height: 40px;" size="0" tabindex="" class="major" onchange="return formCheckSubmit(this.form, major.dora.value, -1, 'a major')" onmouseover="showHelpDiv('helptextCHOOSEMAJOR')" onmouseout="hideHelpDiv('helptextCHOOSEMAJOR')">
+
+            <option selected="" value="-1"> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Select a major
+            </option><option value="">All Majors </option>
+
+
+                <option class="fontsize" value="AERO">Aerospace Engineering/B.S.</option>
+
+                <option class="fontsize" value="AFRST">African American Studies/B.A.</option>
+
+                <option class="fontsize" value="AFMIDEAST">African and Middle Eastern Studies/B.A.</option>
+
+                <option class="fontsize" value="AMERIND">American Indian Studies/B.A.</option>
+
+                <option class="fontsize" value="AMLIT">American Literature and Culture/B.A.</option>
+
+                <option class="fontsize" value="ANCEAST EGYPT">Ancient Near East and Egyptology/B.A.</option>
+
+                <option class="fontsize" value="ANTHRO">Anthropology/B.A.</option>
+
+                <option class="fontsize" value="ANTH">Anthropology/B.S.</option>
+
+                <option class="fontsize" value="APPLING">Applied Linguistics/B.A.</option>
+
+                <option class="fontsize" value="APPL MATH">Applied Mathematics/B.S.</option>
+
+                <option class="fontsize" value="ARABIC">Arabic/B.A.</option>
+
+                <option class="fontsize" value="ARCH ST">Architectural Studies/B.A.</option>
+
+                <option class="fontsize" value="ARTHIST">Art History/B.A.</option>
+
+                <option class="fontsize" value="ART">Art/B.A.</option>
+
+                <option class="fontsize" value="ASAMER">Asian American Studies/B.A.</option>
+
+                <option class="fontsize" value="ASHUM">Asian Humanities/B.A.</option>
+
+                <option class="fontsize" value="ASREL">Asian Religions/B.A.</option>
+
+                <option class="fontsize" value="ASSTUD">Asian Studies/B.A.</option>
+
+                <option class="fontsize" value="ASTRPHYS">Astrophysics/B.S.</option>
+
+                <option class="fontsize" value="ATMOS">Atmospheric, Oceanic, and Environmental Sciences/B.S.</option>
+
+                <option class="fontsize" value="BIOCHEM">Biochemistry/B.S.</option>
+
+                <option class="fontsize" value="BIOENG">Bioengineering/B.S.</option>
+
+                <option class="fontsize" value="BIOL">Biology/B.S.</option>
+
+                <option class="fontsize" value="BIOPHYS">Biophysics/B.S.</option>
+
+                <option class="fontsize" value="BUS ECON">Business Economics/B.A.</option>
+
+                <option class="fontsize" value="SLAVIC">Central and East European Languages and Cultures/B.A.</option>
+
+                <option class="fontsize" value="CHEM ENG">Chemical Engineering/B.S.</option>
+
+                <option class="fontsize" value="CHEM">Chemistry/B.S.</option>
+
+                <option class="fontsize" value="CHEMMAT">Chemistry/Materials Science/B.S.</option>
+
+                <option class="fontsize" value="CHICST">Chicana and Chicano Studies/B.A.</option>
+
+                <option class="fontsize" value="CHINSE">Chinese/B.A.</option>
+
+                <option class="fontsize" value="CIVIL ENG">Civil Engineering/B.S.</option>
+
+                <option class="fontsize" value="CLASSCIV">Classical Civilization/B.A.</option>
+
+                <option class="fontsize" value="COG SCI">Cognitive Science/B.S.</option>
+
+                <option class="fontsize" value="COM STD">Communication Studies/B.A.</option>
+
+                <option class="fontsize" value="COMPLIT">Comparative Literature/B.A.</option>
+
+                <option class="fontsize" value="CYBER">Computational and Systems Biology/B.S.</option>
+
+                <option class="fontsize" value="COMP SCI ENG">Computer Science and Engineering/B.S.</option>
+
+                <option class="fontsize" value="COMP SCI">Computer Science/B.S.</option>
+
+                <option class="fontsize" value="DANCE">Dance/B.A.</option>
+
+                <option class="fontsize" value="DES M ARTS">Design/Media Arts/B.A.</option>
+
+                <option class="fontsize" value="EARTHSCI">Earth and Environmental Science B.A.</option>
+
+                <option class="fontsize" value="EBE">Ecology, Behavior, and Evolution/B.S.</option>
+
+                <option class="fontsize" value="ECON">Economics/B.A.</option>
+
+                <option class="fontsize" value="ELEC ENG">Electrical Engineering/B.S.</option>
+
+                <option class="fontsize" value="GEOLENG">Engineering Geology/B.S.</option>
+
+                <option class="fontsize" value="ENGL">English/B.A.</option>
+
+                <option class="fontsize" value="ENV SCI">Environmental Science/B.S.</option>
+
+                <option class="fontsize" value="ETHNOM">Ethnomusicology/B.A.</option>
+
+                <option class="fontsize" value="EUROST">European Studies/B.A.</option>
+
+                <option class="fontsize" value="FILM TV">Film and Television/B.A.</option>
+
+                <option class="fontsize" value="FIN ACT MAT">Financial Actuarial Mathematics/B.S.</option>
+
+                <option class="fontsize" value="FRLING">French and Linguistics/B.A.</option>
+
+                <option class="fontsize" value="FRNCH">French/B.A.</option>
+
+                <option class="fontsize" value="WMST">Gender Studies\B.A.</option>
+
+                <option class="fontsize" value="GEOG">Geography/B.A.</option>
+
+                <option class="fontsize" value="GEOGENV">Geography/Environmental Studies/B.A.</option>
+
+                <option class="fontsize" value="GEOL">Geology B.S.</option>
+
+                <option class="fontsize" value="GEOPHYSAPP">Geophysics/B.S.</option>
+
+                <option class="fontsize" value="GERMN">German/B.A.</option>
+
+                <option class="fontsize" value="GLST">Global Studies/B.A.</option>
+
+                <option class="fontsize" value="GREEKLAT">Greek and Latin/B.A.</option>
+
+                <option class="fontsize" value="GREEK">Greek/B.A.</option>
+
+                <option class="fontsize" value="HIST">History/B.A.</option>
+
+                <option class="fontsize" value="HBIOL BA">Human Biology and Society/B.A.</option>
+
+                <option class="fontsize" value="HBIOL BS">Human Biology and Society/B.S.</option>
+
+                <option class="fontsize" value="INTER DEVEL">International Development Studies/B.A.</option>
+
+                <option class="fontsize" value="IRAN">Iranian Studies/B.A.</option>
+
+                <option class="fontsize" value="ITALSP">Italian and Special Fields/B.A.</option>
+
+                <option class="fontsize" value="ITAL">Italian/B.A.</option>
+
+                <option class="fontsize" value="JAPAN">Japanese/B.A.</option>
+
+                <option class="fontsize" value="JWST">Jewish Studies/B.A.</option>
+
+                <option class="fontsize" value="KOREAN">Korean/B.A.</option>
+
+                <option class="fontsize" value="LATAMER">Latin American Studies/B.A.</option>
+
+                <option class="fontsize" value="LATIN">Latin/B.A.</option>
+
+                <option class="fontsize" value="LINGANTH">Linguistics and Anthropology/B.A.</option>
+
+                <option class="fontsize" value="LINGASN">Linguistics and Asian Languages and Cultures/B.A.</option>
+
+                <option class="fontsize" value="LINGCS">Linguistics and Computer Science/B.A.</option>
+
+                <option class="fontsize" value="LINGENG">Linguistics and English/B.A.</option>
+
+                <option class="fontsize" value="LINGFR">Linguistics and French/B.A.</option>
+
+                <option class="fontsize" value="LINGITAL">Linguistics and Italian/B.A.</option>
+
+                <option class="fontsize" value="LINGPHIL">Linguistics and Philosophy/B.A.</option>
+
+                <option class="fontsize" value="LINGPSY">Linguistics and Psychology/B.A.</option>
+
+                <option class="fontsize" value="LINGSCAN">Linguistics and Scandinavian Languages/B.A.</option>
+
+                <option class="fontsize" value="LINGSPAN">Linguistics and Spanish/B.A.</option>
+
+                <option class="fontsize" value="LING">Linguistics/B.A.</option>
+
+                <option class="fontsize" value="MAR BIO">Marine Biology/B.S.</option>
+
+                <option class="fontsize" value="MAT ENG">Materials Engineering/B.S.</option>
+
+                <option class="fontsize" value="GEN MATH">Mathematics for Teaching B.S.</option>
+
+                <option class="fontsize" value="MATH OF COMP">Mathematics of Computation/B.S.</option>
+
+                <option class="fontsize" value="MATH/APPL SCI">Mathematics/Applied Science/B.S.</option>
+
+                <option class="fontsize" value="MATH AOS">Mathematics/Atmospheric and Oceanic Sciences/B.S.</option>
+
+                <option class="fontsize" value="MATH">Mathematics/B.S.</option>
+
+                <option class="fontsize" value="MATH/ECON">Mathematics/Economics/B.S.</option>
+
+                <option class="fontsize" value="MECH ENG">Mechanical Engineering/B.S.</option>
+
+                <option class="fontsize" value="MICROBIOL">Microbiology, Immunology, and Molecular Genetics/B.S.</option>
+
+                <option class="fontsize" value="MIDEAST">Middle Eastern Studies/B.A.</option>
+
+                <option class="fontsize" value="CELL MOL">Molecular, Cell, and Developmental Biology/B.S.</option>
+
+                <option class="fontsize" value="MUSHIST">Music History/B.A.</option>
+
+                <option class="fontsize" value="MUSIC">Music/B.A.</option>
+
+                <option class="fontsize" value="NEURO">Neuroscience/B.S.</option>
+
+                <option class="fontsize" value="NURS GEN PRE">Nursing-Generic/Prelicensure/B.S.</option>
+
+                <option class="fontsize" value="PHILOS">Philosophy/B.A.</option>
+
+                <option class="fontsize" value="GEN PHYS">Physics B.A.</option>
+
+                <option class="fontsize" value="PHYSICS">Physics/B.S.</option>
+
+                <option class="fontsize" value="PHYS SCI">Physiological Science/B.S.</option>
+
+                <option class="fontsize" value="POL SCI">Political Science/B.A.</option>
+
+                <option class="fontsize" value="PORT">Portuguese/B.A.</option>
+
+                <option class="fontsize" value="PSYCHOBIOL">Psychobiology/B.S.</option>
+
+                <option class="fontsize" value="PSYCH">Psychology/B.A.</option>
+
+                <option class="fontsize" value="RELST">Religion, Study of/B.A.</option>
+
+                <option class="fontsize" value="RUSSLANG">Russian Language and Literature/B.A.</option>
+
+                <option class="fontsize" value="RUSS ST">Russian Studies/B.A.</option>
+
+                <option class="fontsize" value="SCAN">Scandinavian Languages and Cultures/B.A.</option>
+
+                <option class="fontsize" value="SOC">Sociology/B.A.</option>
+
+                <option class="fontsize" value="SPANCC">Spanish and Community and Culture B.A</option>
+
+                <option class="fontsize" value="SPANLING">Spanish and Linguistics/B.A.</option>
+
+                <option class="fontsize" value="SPANPORT">Spanish and Portuguese/B.A.</option>
+
+                <option class="fontsize" value="SPAN">Spanish/B.A.</option>
+
+                <option class="fontsize" value="STAT">Statistics/B.S.</option>
+
+                <option class="fontsize" value="THE">Theater/B.A.</option>
+
+                <option class="fontsize" value="WAC">World Arts and Cultures/B.A.</option>
+
+          </select>
+
+        </div>
+
+        </div>
+
+      </div>
+       </body>
+
+     </body>
+
+
+
+     </div>
+
+     <div class="col-sm-2 col-med-2">
+
+     </div>
+
+
+
+
+</div>
+
+</div>
+</html>
